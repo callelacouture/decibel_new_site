@@ -6,14 +6,16 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "dotenv": "^8.0.0",
     "gatsby": "^2.6.0",
+    "gatsby-source-contentful": "^2.0.62",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
